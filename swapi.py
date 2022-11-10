@@ -61,56 +61,11 @@ def planets():
     data= todataframe(json(urlname("planets"))['results'])
     return data
 
+def film():
+    data = todataframe(json(urlname("films"))["results"])
+    return data
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+film()
 
 
 # Species
@@ -126,3 +81,4 @@ todataframe(json(urlname("species")))
 def species():
 df_species = todataframe(json(urlname("species"))['results'])
 return data
+
