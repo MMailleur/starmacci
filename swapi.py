@@ -57,3 +57,21 @@ todataframe(json(urlname("people")))
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+def film():
+    data = todataframe(json(urlname("films"))["results"])
+    return data
+
+film()
+
