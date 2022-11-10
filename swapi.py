@@ -57,7 +57,9 @@ def fonctionfinale(str) :
     dataf = todataframe(json(urlname(str)))
     return dataf
 
-
+def planets():
+    data= todataframe(json(urlname("planets"))['results'])
+    return data
 
 
 
