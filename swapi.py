@@ -51,7 +51,11 @@ def todataframe(json_data):
 todataframe(json(urlname("people")))
 
 
-# In[ ]:
+# In[25]:
+
+def fonctionfinale(str) :
+    dataf = todataframe(json(urlname(str)))
+    return dataf
 
 
 
