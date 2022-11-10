@@ -53,7 +53,9 @@ todataframe(json(urlname("people")))
 
 # In[ ]:
 
-
+def planets():
+    data= todataframe(json(urlname("planets"))['results'])
+    return data
 
 
 
