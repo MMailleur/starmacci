@@ -57,4 +57,66 @@ todataframe(json(urlname("people")))
 
 
 
-Camille
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Species
+urlname("species")
+def json(species) :
+    json_data = species.json()
+    return json_data
+json(urlname("species"))
+def todataframe(json_data):
+    pd_data = pd.DataFrame(json_data)
+    return pd_data
+todataframe(json(urlname("species")))
+def species():
+df_species = todataframe(json(urlname("species"))['results'])
+return data
