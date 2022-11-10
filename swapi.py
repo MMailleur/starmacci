@@ -51,27 +51,34 @@ def todataframe(json_data):
 todataframe(json(urlname("people")))
 
 
-# In[ ]:
+# In[25]:
 
+def fonctionfinale(str) :
+    dataf = todataframe(json(urlname(str)))
+    return dataf
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def planets():
+    data= todataframe(json(urlname("planets"))['results'])
+    return data
 
 def film():
     data = todataframe(json(urlname("films"))["results"])
     return data
 
 film()
+
+
+# Species
+urlname("species")
+def json(species) :
+    json_data = species.json()
+    return json_data
+json(urlname("species"))
+def todataframe(json_data):
+    pd_data = pd.DataFrame(json_data)
+    return pd_data
+todataframe(json(urlname("species")))
+def species():
+df_species = todataframe(json(urlname("species"))['results'])
+return data
 
